@@ -1,0 +1,116 @@
+---
+import '../styles/boda.css';
+---
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Invitación de Boda</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <!-- Sección 1 -->
+      <section id="inicio" class="fade-zoom" style="background: var(--fondo);">
+        <div>
+          <h1>"A veces lo que empieza como una locura se convierte en lo mejor de tu vida"</h1>
+          <!--<img src="/img/portada.png" alt="Portada"> -->
+          <p>Marlene & Alejandro</p>
+		  <h1>Nos complace invitarte a Nuestra Boda</h1>
+          <button data-target="galeria">Ver más</button>
+        </div>
+      </section>
+
+      <!-- Sección 2 -->
+      <section id="galeria" class="fade-zoom" style="background: var(--fondo);">
+        <div>
+          <h2>Estaremos felices que nos acompañes en nuestra ceremonia</h2>
+		
+		  <h2>Enero 17</h2>
+		  
+		  <h4>2025</h4>
+		  
+		  <h4>a las</h4>
+		  
+		  <h4>15:00 hrs</h4>
+          <!-- <img src="/img/nosotros.png" alt="Nosotros">-->
+		  
+		  <button data-target="galeria">Ver ubicación</button>
+		  
+          <button data-target="galeria">Ver más</button>
+        </div>
+      </section>
+  		<!-- Sección 3-->
+	  <section id="galeria" class="fade-zoom" style="background: var(--fondo);">
+        <div>
+          <p>Posterior a la ceremonia te invitamos a nuestra recepcion en el salon de eventos</p>
+          <h1>Salón Mari Angelica</h1>
+		  <p>a las</p>
+		  <h1>18:00 hrs</h1>
+		  <button data-target="galeria">Ver ubicación</button>
+          <button data-target="confirmacion">Ver más</button>
+        </div>
+      </section>
+
+	  <!-- Sección 4-->
+	  <section id="galeria" class="fade-zoom" style="background: var(--fondo);">
+        <div>
+          <h2>Faltan</h2>
+    
+          <p>horas</p>
+           <button data-target="galeria">Ver más</button>
+        </div>
+      </section>
+<!-- Sección 5-->
+	  <section id="galeria" class="fade-zoom" style="background: var(--fondo);">
+        <div>
+          <h2>¿Regalos?</h2>
+         <!-- <img src="/img/nosotros.png" alt="Nosotros"> -->
+          <p>Tu presencia siempre será el mejor regalo para nosotros, pero si deseas 
+			hacernos un regalo adicional contaremos con sobres en el evento para depositar 
+		cartas, dinero y buenos deseos para nuestro porvenir.</p>
+
+		 <h2>Dresscode</h2>
+         <!-- <img src="/img/nosotros.png" alt="Nosotros"> -->
+          <p>Formal.</p>
+			<p>¡Queremos tu mejor perfil para el álbun de recuerdos!</p>
+           <button data-target="confirmacion">Ver más</button>
+        </div>
+      </section>
+	  <!-- Sección 6-->
+	  <section id="galeria" class="fade-zoom" style="background: var(--fondo);">
+        <div>
+          <h2>Foto Marlene y Duyran</h2>
+          <!--<img src="/img/nosotros.png" alt="Nosotros"> -->
+            <button data-target="confirmacion">Ver más</button>
+        </div>
+      </section>
+	  <!-- Sección 7-->
+	  <section id="galeria" class="fade-zoom" style="background: var(--fondo);">
+        <div>
+          <h2>Te esperamos</h2>
+          <!--<img src="/img/nosotros.png" alt="Nosotros"> -->
+          <p>Foto marlene y Duran</p>
+          <button data-target="confirmacion">Ver más</button>
+        </div>
+      </section>
+	  
+      <!-- Sección 8 -->
+      <section id="confirmacion" class="fade-zoom" style="background: var(--fondo);">
+        <div>
+          <h2>Confirma tu asistencia ❤️</h2>
+          <form id="form">
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+            <button type="submit">Confirmar</button>
+          </form>
+          <p id="respuesta"></p>
+          <button data-target="inicio" style="margin-top: 20px;">Volver al inicio</button>
+        </div>
+      </section>
+    </main>
+    <!-- JS cliente -->
+ 	<script type="module" is:inline>
+  	import "../src/scripts/boda.js";
+	</script>
+
+  </body>
+</html>
